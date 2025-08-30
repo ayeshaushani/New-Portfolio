@@ -1,0 +1,41 @@
+:root {
+    --primary: #a121c5;       /* yellow accent */
+    --primary-dark: #a121c5;
+    --accent: #A121C5FF;        /* yellow accent */
+    --dark: #000000;          /* black text */
+    --light: #FFFFFF;         /* white background */
+    --gray: #333333;          /* secondary text color */
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+    background-color: var(--light);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 100px 0;
+}
+

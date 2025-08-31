@@ -132,4 +132,22 @@ nav {
     position: relative;
     z-index: 2;
 }
+#home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: var(--dark);
+}
+
+#home h1 span {
+    color: var(--accent);
+}
+
+#home h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
 

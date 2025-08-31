@@ -116,3 +116,20 @@ nav {
     cursor: pointer;
     color: var(--dark);
 }
+/* Hero Section */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+    background: var(--light);
+}
+
+.hero-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+

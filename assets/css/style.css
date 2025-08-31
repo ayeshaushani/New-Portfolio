@@ -154,5 +154,23 @@ nav {
     margin-bottom: 2.5rem;
     color: var(--gray);
 }
+.img-container {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--primary);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
 
+.img {
+    width: 100%;
+    height: auto; /* keep original ratio */
+    object-fit: cover;
+    display: block; /* avoid extra space under image */
+}
 

@@ -149,5 +149,10 @@ nav {
     color: var(--primary);
     font-weight: 600;
 }
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    color: var(--gray);
+}
 
 

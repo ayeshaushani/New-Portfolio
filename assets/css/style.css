@@ -936,7 +936,27 @@ footer {
     color: #ccc;
 }
 
+/* Responsive Design */
+@media (max-width: 992px) {
+    .contact-content {
+        flex-direction: column;
+    }
 
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+}
 
 
 

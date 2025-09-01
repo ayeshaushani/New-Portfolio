@@ -710,7 +710,159 @@ nav {
     color: var(--gray);
     font-size: 0.95rem;
 }
+/* Contact Section */
+#contact {
+    background: var(--light);
+    padding: 100px 0;
+}
 
+.contact-content {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.contact-info p {
+    margin-bottom: 30px;
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+.contact-details {
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-size: 1.2rem;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.contact-text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--dark);
+}
+
+.contact-text p {
+    margin-bottom: 0;
+    color: var(--gray);
+}
+
+.contact-social {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-social a {
+    width: 45px;
+    height: 45px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.contact-social a:hover {
+    background: var(--dark);
+    transform: translateY(-5px);
+}
+
+.contact-form {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: transparent;
+    transition: var(--transition);
+}
+
+.form-group label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: var(--gray);
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:valid ~ label {
+    top: -12px;
+    left: 10px;
+    font-size: 0.85rem;
+    background: var(--light);
+    padding: 0 10px;
+    color: var(--primary);
+}
+
+.submit-btn {
+    padding: 15px 35px;
+    background: var(--primary);
+    color: var(--light);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background: var(--dark);
+    transform: translateY(-3px);
+}
 
 
 

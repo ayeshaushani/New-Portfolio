@@ -296,6 +296,21 @@ nav {
     background: var(--light);
     color: var(--primary);
 }
+.cv-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #111;   /* change color as you like */
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cv-btn:hover {
+    background-color: #a121c5;
+}
+
 
 
 

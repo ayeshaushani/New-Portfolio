@@ -696,9 +696,15 @@ nav {
     justify-content: center;
     background: #f9f9f9;
     border-radius: 50%;
-    font-size: 2rem;
-    color: var(--primary);
+    overflow: hidden; /* Prevents image overflow */
 }
+
+.skill-icon img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain; /* Keeps logo proportions */
+}
+
 
 .skill-card h3 {
     font-size: 1.3rem;

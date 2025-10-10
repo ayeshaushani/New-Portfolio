@@ -1257,8 +1257,9 @@ nav.scrolled {
         transform: translateY(0);
     }
 }
+/*================================================================================================================*/
 /* Projects Section */
-
+/*
 #projects {
     background: #f9f9fb;
     padding: 80px 20px;
@@ -1266,9 +1267,10 @@ nav.scrolled {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); !* 400px thiyama 2k wenawa desktop waladi *!
     gap: 35px;
 }
+
 
 .project-card {
     background: #ffffff;
@@ -1285,7 +1287,7 @@ nav.scrolled {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* Project image */
+!* Project image *!
 .project-img {
     width: 100%;
     height: 220px;
@@ -1304,7 +1306,7 @@ nav.scrolled {
     transform: scale(1.08);
 }
 
-/* Project info */
+!* Project info *!
 .project-info {
     padding: 25px 20px;
     flex: 1;
@@ -1327,7 +1329,7 @@ nav.scrolled {
     font-size: 0.95rem;
 }
 
-/* Link button */
+!* Link button *!
 .project-link {
     align-self: flex-start;
     padding: 10px 18px;
@@ -1345,7 +1347,7 @@ nav.scrolled {
     transform: translateY(-2px);
 }
 
-/* ==== Section Styling ==== */
+!* ==== Section Styling ==== *!
 .projects-section {
     padding: 60px 20px;
     text-align: center;
@@ -1359,7 +1361,7 @@ nav.scrolled {
     margin-bottom: 40px;
 }
 
-/* ==== Container ==== */
+!* ==== Container ==== *!
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -1370,7 +1372,7 @@ nav.scrolled {
     margin: 0 auto;
 }
 
-/* ==== Card Styling ==== */
+!* ==== Card Styling ==== *!
 .project-card {
     display: flex;
     flex-direction: column;
@@ -1378,7 +1380,7 @@ nav.scrolled {
     background: #fff;
     border-radius: 18px;
     padding: 28px;
-    border-left: 5px solid #0ae4a2;
+    border-left: 5px solid #3b82f6;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1388,7 +1390,7 @@ nav.scrolled {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* ==== Content ==== */
+!* ==== Content ==== *!
 .project-content {
     flex-grow: 1;
     text-align: left;
@@ -1400,6 +1402,12 @@ nav.scrolled {
     color: #1e293b;
     margin-bottom: 10px;
 }
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); !* desktop waladi 2 cards per row *!
+    }
+}
+
 
 .project-card p,
 .project-card ul {
@@ -1413,7 +1421,7 @@ nav.scrolled {
     margin-bottom: 10px;
 }
 
-/* ==== Image ==== */
+!* ==== Image ==== *!
 .project-visuals img {
     width: 100%;
     border-radius: 12px;
@@ -1422,10 +1430,10 @@ nav.scrolled {
     object-fit: cover;
 }
 
-/* ==== Button ==== */
+!* ==== Button ==== *!
 .btn {
     display: inline-block;
-    background-color: #0ae4a2;
+    background-color: #2563eb;
     color: #fff;
     text-decoration: none;
     padding: 10px 18px;
@@ -1437,10 +1445,10 @@ nav.scrolled {
 }
 
 .btn:hover {
-    background-color: #0ae4a2;
+    background-color: #1d4ed8;
 }
 
-/* ==== Responsive ==== */
+!* ==== Responsive ==== *!
 @media (max-width: 900px) {
     .projects-section {
         padding: 50px 15px;
@@ -1468,10 +1476,126 @@ nav.scrolled {
         width: 100%;
         text-align: center;
     }
+}*/
+.projects-section {
+    padding: 60px 20px;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+/* ==== Container ==== */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* default mobile ekata */
+    gap: 35px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==== Card Styling ==== */
+.project-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 28px;
+    border-left: 5px solid #3b82f6;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.project-title {
+    color: #1a73e8;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.project-card p,
+.project-card ul {
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.project-card ul {
+    margin-left: 20px;
+}
+
+/* ==== Image ==== */
+.project-visuals img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 15px 0;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* ==== Button ==== */
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* ==== Responsive Layouts ==== */
+
+/* 📱 Mobile (1 card per row) */
+@media (max-width: 600px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+/* 📲 Tablet (2 cards per row) */
+@media (min-width: 601px) and (max-width: 991px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* 💻 Desktop (4 cards → 2 per row, 2 per column) */
+@media (min-width: 992px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 40px;
+    }
 }
 
 
-/* Education & Experience Section */
+/* ==== EDUC SECTION ==== */
 #educ {
     background: var(--light);
     border-radius: 20px;
@@ -1493,13 +1617,16 @@ nav.scrolled {
 
 .section-title h2 {
     color: var(--primary);
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-/* Interactive Timeline */
+/* ==== TIMELINE BASE ==== */
 .timeline {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .timeline::after {
@@ -1514,6 +1641,7 @@ nav.scrolled {
     border-radius: 10px;
 }
 
+/* ==== ITEMS ==== */
 .timeline-item {
     padding: 10px 40px;
     position: relative;
@@ -1557,6 +1685,7 @@ nav.scrolled {
     left: -13px;
 }
 
+/* ==== CONTENT BOX ==== */
 .timeline-content {
     padding: 20px 30px;
     background: var(--light);
@@ -1571,22 +1700,6 @@ nav.scrolled {
 .timeline-content:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(26, 26, 46, 0.1);
-}
-
-.timeline-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(15, 206, 176, 0.05) 0%, rgba(13, 179, 158, 0.05) 100%);
-    z-index: 0;
-}
-
-.timeline-content > * {
-    position: relative;
-    z-index: 1;
 }
 
 .timeline-date {
@@ -1646,6 +1759,98 @@ nav.scrolled {
     font-weight: 600;
 }
 
+/* ==== RESPONSIVE DESIGN ==== */
+
+/* 🖥️ Large devices (default) → 2 sides */
+@media (max-width: 1024px) {
+    .timeline::after {
+        left: 50%;
+    }
+}
+
+/* 📱 Tablets & Mobiles → Single column */
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 25px;
+        margin-bottom: 40px;
+    }
+
+    .timeline-item::after {
+        left: 15px;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(odd) {
+        left: 0;
+    }
+
+    .timeline-content {
+        border-left: 4px solid var(--accent);
+        border-right: none;
+    }
+}
+
+/* 📱 Small mobile devices */
+@media (max-width: 480px) {
+    .timeline-content {
+        padding: 15px 20px;
+    }
+
+    .timeline-date {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+    /* 📱 Extra small (320px) */
+    @media (max-width: 320px) {
+        #educ {
+            padding: 40px 15px;
+        }
+
+        .section-title h2 {
+            font-size: 1.4rem;
+        }
+
+        .timeline::after {
+            left: 15px;
+        }
+
+        .timeline-item {
+            padding-left: 50px;
+            padding-right: 15px;
+        }
+
+        .timeline-content {
+            padding: 12px 15px;
+        }
+
+        .timeline-date {
+            font-size: 0.7rem;
+            padding: 5px 10px;
+        }
+
+        .timeline-content h3 {
+            font-size: 1rem;
+        }
+
+        .timeline-content p,
+        .timeline-content li {
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+}
 
 /* Skills Section */
 /* Skills Section - Modern Navy & Teal */
@@ -2533,6 +2738,7 @@ footer {
         height: auto;
         min-height: 100vh;
     }
+  }
 }
 
 

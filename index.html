@@ -12,8 +12,33 @@
 
 </head>
 <body>
-<!-- Header & Navigation -->
+
+
+<!-- ==== NAVBAR ==== -->
 <header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Ayesha<span>Ushani</span></a>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects-section" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#educ" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Font Awesome -->
+<!-- Header & Navigation -->
+<!--<header>
     <div class="container">
         <nav>
             <div class="logo">Ayesha<span>Ushani</span></div>
@@ -31,7 +56,7 @@
 
         </nav>
     </div>
-</header>
+</header>-->
 
 <!--&lt;!&ndash; Home Section &ndash;&gt;
 <section id="home">
@@ -85,7 +110,7 @@
         </div>
 
         <div class="img-container">
-            <img src="assets/images/dp.jpeg" alt="ayesha" class="img">
+            <img src="assets/images/ayesha.jpeg" alt="ayesha" class="img">
         </div>
     </div>
 
@@ -138,129 +163,6 @@
         </div>
     </div>
 </section>
-<!--<section id="about">
-    <div class="container">
-        <div class="section-title">
-            <h2>About Me</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="assets/images/profil%20pic.jpg" alt="Ayesha Ushani">
-            </div>
-            <div class="about-text">
-                <h3>LET ME INTRODUCE MYSELF</h3>
-                <p><b>"Innovation thrives on the bravery to defy the conventional and the foresight to craft the remarkable"</b><br><br>
-                    I’m an aspiring Full-Stack Developer and UI/UX Designer, currently an undergraduate at IJSE.
-                    Skilled in React, Node.js, Spring Boot, Firebase, and Figma, I combine technical expertise
-                    with user-centered design principles. I’m eager to apply my skills in building scalable
-                    applications with intuitive, engaging interfaces and gain hands-on experience in real-world projects..</p>
-
-                <div class="info-box">
-                    <div class="info-item">
-                        <b>Name:</b> Ayesha Ushani
-                    </div>
-                    <div class="info-item">
-                        <b>Age:</b> 25 yrs old
-                    </div>
-                    <div class="info-item">
-                        <b>Email:</b> ayeshaushani61@gmail.com
-                    </div>
-                    <div class="info-item">
-                        <b>Tel:</b> 077-0825835
-                    </div>
-                    <div class="info-item">
-                        <b>Nationality:</b> Sri Lanka
-                    </div>
-                </div>
-
-                <a href="assets/images/Ayesha%20Ushani.pdf%20(2).pdf" download class="cv-btn">
-                    Download CV
-                </a>
-
-            </div>
-        </div>
-    </div>
-</section>-->
-<!--
-&lt;!&ndash; Projects Section &ndash;&gt;
-<section id="project">
-    <div class="container">
-        <div class="section-title">
-            <h2>My Projects</h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/images/travel.jpg" alt="student management">
-                </div>
-                <div class="project-info">
-                    <h3>Travel Booking System</h3>
-                    <p>Developed a Spring Boot–based travel booking system with a multistep package booking workflow</p>
-                    <a href="https://github.com/ayeshaushani/Travel_Booking_System.git" class="project-link">Read More</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/images/student-management-1-1.png" alt="connect 4 game">
-                </div>
-                <div class="project-info">
-                    <h3>The Culinary Academy</h3>
-                    <p>Built a Java-based backend system with Hibernate ORM to manage culinary academy operations.</p>
-                    <a href="https://github.com/ayeshaushani/ORM_Course_Work.git" class="project-link">Read More</a>
-                </div>
-            </div>
-
-             <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/images/plantcare.png" alt="plantcare">
-                </div>
-                <div class="project-info">
-                    <h3>Plant Care App</h3>
-                    <p>Built a mobile application to manage plant care reminders, allowing users to add plants and schedule
-                        maintenance tasks.
-                    </p>
-                    <a href="https://github.com/ayeshaushani/plant-care-reminder.git" class="project-link">Read More</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/images/retail%20system.png" alt="retail">
-                </div>
-                <div class="project-info">
-                    <h3>Online Retail System</h3>
-                    <p>Built a desktop application to manage delivery operations with order tracking and scheduling features.</p>
-                    <a href="https://github.com/ayeshaushani/Plant-Care-App.git" class="project-link">Read More</a>
-                </div>
-            </div>
-
-
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/images/delivery%20management.jpg" alt="delivery management">
-                </div>
-                <div class="project-info">
-                    <h3>Delivery Management System</h3>
-                    <p>Order manager for a delivery system, developed using Java and JavaFX.</p>
-                    <a href="https://github.com/ayeshaushani/final_project.git" class="project-link">Read More</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="assets/images/smartparking.png" alt="smartparking">
-                </div>
-                <div class="project-info">
-                    <h3>Smart Parking System</h3>
-                    <p>Developed a Spring Boot–based backend system using microservices architecture for vehicle parking operations</p>
-                    <a href="https://github.com/ayeshaushani/smart_parking_system.git" class="project-link">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
-
 <!-- Business Analyst Portfolio Section -->
 <section class="projects-section">
     <h2 class="section-title">Business Analyst Projects</h2>
@@ -368,7 +270,7 @@
 </section>
 
 <!-- Education Section -->
-<section id="educ">
+<!--<section id="educ">
     <div class="container">
         <div class="section-title">
             <h2>Education & Experience</h2>
@@ -403,44 +305,6 @@
                     <div class="additional-details">
                         <p>Completed comprehensive ICT diploma program covering fundamentals of computing, programming, and networking.</p>
                         <p>Enhanced English language proficiency through advanced diploma program.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <span class="timeline-date">2021 - 2023</span>
-                    <h3><i class="fas fa-briefcase"></i> Business Consultant</h3>
-                    <p><span class="highlight">Company:</span> Fresh Catch Traders</p>
-                    <p><span class="highlight">Role:</span> Provided strategic business consulting services</p>
-
-                    <button class="details-btn" onclick="toggleDetails(this)">More Details <i class="fas fa-chevron-down"></i></button>
-
-                    <div class="additional-details">
-                        <p>Developed and implemented business strategies that increased company revenue by 25%.</p>
-                        <p>Analyzed market trends and competition to identify new business opportunities.</p>
-                        <p>Streamlined operational processes resulting in 15% cost reduction.</p>
-
-                        <div class="skills-container">
-                            <div class="skill">
-                                <div class="skill-name">Business Strategy</div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-name">Market Analysis</div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-name">Process Optimization</div>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -495,8 +359,58 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
+<section id="educ" class="education-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Education</h2>
+        </div>
 
+        <div class="timeline">
+            <!-- BSc -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>BSc. in Computer Science (Hons)</h3>
+                    <p class="edu-institute">University of Bolton, United Kingdom<br>Institute of Software Engineering</p>
+                    <span class="edu-date">2023 – Present</span>
+                </div>
+            </div>
+
+            <!-- Diploma -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Diploma in Information & Communication Technology (English)</h3>
+                    <p class="edu-institute">
+                        <i class="fas fa-school edu-icon"></i>
+                        ICBT Campus
+                    </p>
+                    <span class="edu-date">Dec 2020 – July 2021</span>
+                </div>
+            </div>
+
+            <!-- Advanced Level -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Advanced Level – Physical Science</h3>
+                    <span class="edu-date">2020</span>
+                </div>
+            </div>
+
+            <!-- Ordinary Level -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Ordinary Level – 6As & 3Bs</h3>
+                    <p class="edu-institute">MR / Thelijjawila Central College</p>
+                    <span class="edu-date">2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="skills">
     <div class="container">
         <div class="section-title">
@@ -599,44 +513,45 @@
 </section>
 
 <!-- Contact Section -->
+<!-- ====== CONTACT SECTION ====== -->
 <section id="contact">
     <div class="container">
         <div class="section-title">
             <h2>Get In Touch</h2>
+            <p>Let’s collaborate and create something impactful together.</p>
         </div>
+
         <div class="contact-content">
+            <!-- Contact Info -->
             <div class="contact-info">
-                <h3>Let's Talk About Your Project</h3>
-                <p>I’m available for freelance Business Analysis work and exciting opportunities. Feel free to reach out — I’d be happy to collaborate on projects where I can turn business needs into impactful digital solutions.</p>
+                <h3>Let’s Talk About Your Project</h3>
+                <p>
+                    I’m available for freelance Business Analysis and UI/UX projects.
+                    Feel free to reach out — I’ll reply as soon as possible!
+                </p>
 
                 <div class="contact-details">
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
                             <h4>Location</h4>
                             <p>Matara, Sri Lanka</p>
                         </div>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
+                        <i class="fas fa-envelope"></i>
+                        <div>
                             <h4>Email</h4>
                             <p>akisasenari@gmail.com</p>
                         </div>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
+                        <i class="fas fa-phone"></i>
+                        <div>
                             <h4>Phone</h4>
-                            <p>077-0825835</p>
+                            <p>+94 770 825 835</p>
                         </div>
                     </div>
                 </div>
@@ -648,6 +563,7 @@
                 </div>
             </div>
 
+            <!-- Contact Form -->
             <div class="contact-form">
                 <form id="contactForm">
                     <div class="form-group">
@@ -670,13 +586,16 @@
                         <label for="message">Your Message</label>
                     </div>
 
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
                 </form>
+                <p id="statusMessage"></p>
             </div>
         </div>
     </div>
 </section>
-<!-- Footer -->
+<!--
 <footer>
     <div class="container">
         <div class="footer-content">
@@ -710,6 +629,89 @@
         </div>
     </div>
 </footer>
+-->
+<footer class="footer-section">
+    <div class="container footer-container">
+        <!-- About / Logo -->
+        <div class="footer-about">
+            <h3>Ayesha<span>Ushani</span></h3>
+            <p>Passionate Business Analyst & UI/UX enthusiast. Turning ideas into impactful digital solutions.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#educ">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Matara, Sri Lanka</p>
+            <p><i class="fas fa-envelope"></i> akisasenari@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 077-0825835</p>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/akisa.senari" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/ayesha-ushani-310b64318" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ayeshaushani" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Ayesha Ushani. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<!-- ====== EMAILJS SCRIPT ====== -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init({
+            publicKey: "XduP-6nU0oFPnCmqg" // ✅ Your correct Public Key
+        });
+    })();
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const btn = document.querySelector(".submit-btn");
+        const status = document.getElementById("statusMessage");
+
+        btn.disabled = true;
+        btn.innerHTML = "Sending...";
+
+        emailjs.sendForm("service_821joc2", "template_ewjnv4s", this) // ✅ Replace with your Template ID
+            .then(() => {
+                status.innerHTML = "✅ Message sent successfully!";
+                status.style.color = "green";
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+                this.reset();
+            }, (error) => {
+                console.error("EmailJS Error:", error);
+                status.innerHTML = "❌ Failed to send message. Please try again.";
+                status.style.color = "red";
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+            });
+    });
+</script>
 <script>
     const menuBtn = document.querySelector('.menu-btn');
     const navLinks = document.querySelector('.nav-links');
@@ -780,5 +782,17 @@
         });
     });
 </script>
+<script>
+    const navToggle = document.getElementById("nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        navToggle.innerHTML = navMenu.classList.contains("active")
+            ? '<i class="fas fa-times"></i>'
+            : '<i class="fas fa-bars"></i>';
+    });
+</script>
+
 </body>
 </html>
